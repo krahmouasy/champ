@@ -29,7 +29,7 @@ message(STATUS "Fortran compiler                 :: " ${CMAKE_Fortran_COMPILER} 
 message(STATUS "Fortran compiler version         :: " ${CMAKE_Fortran_COMPILER_VERSION} )
 
 # Set folder variables:
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/bin)
+set(CMAKE_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/bin)
 set(CMAKE_VMC_DIR ${CMAKE_SOURCE_DIR}/src/vmc)
 set(CMAKE_DMC_DIR ${CMAKE_SOURCE_DIR}/src/dmc)
 set(CMAKE_PARSER_DIR ${CMAKE_SOURCE_DIR}/src/parser)
