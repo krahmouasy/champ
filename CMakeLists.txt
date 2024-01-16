@@ -290,9 +290,9 @@ elseif(CMAKE_Fortran_COMPILER_ID STREQUAL "Flang")
 
 #List of Fortran flags for LLVM Flang based compiler ends here
 
-elseif(Fortran_COMPILER_ID MATCHES "PGI")
-  list(APPEND CMAKE_Fortran_FLAGS "-Mfreeform -Mdclchk -Mstandard -Mallocatable=03")
 endif()
+
+list(APPEND Fortran_FLAGS ${CMAKE_Fortran_FLAGS})
 
 message("")
 message(STATUS "Fortran compiler flags   : " )
